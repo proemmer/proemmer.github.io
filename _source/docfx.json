@@ -1,27 +1,12 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "src/**.csproj"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "../**"
-          ]
-        }
-      ],
-      "dest": "api"
-    }
-  ],
   "build": {
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md"
+          "about/**.md",
+          "about/**/toc.yml",
+          "toc.yml",
+          "*.md"
         ]
       },
       {
@@ -30,10 +15,14 @@
           "articles/**/toc.yml",
           "toc.yml",
           "*.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "../**"
+        ]
+      },
+      {
+        "files": [
+          "blogs/**.md",
+          "blogs/**/toc.yml",
+          "toc.yml",
+          "*.md"
         ]
       }
     ],
@@ -41,17 +30,6 @@
       {
         "files": [
           "images/**"
-        ],
-        "exclude": [
-          "obj/**",
-          "../**"
-        ]
-      }
-    ],
-    "overwrite": [
-      {
-        "files": [
-          "apidoc/**.md"
         ],
         "exclude": [
           "obj/**",
