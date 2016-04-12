@@ -1,6 +1,0 @@
-
-- name: blog
-  href: blogs/
-- name: about
-  href: about/
-  homepage: about/index.md

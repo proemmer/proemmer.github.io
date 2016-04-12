@@ -1,3 +1,0 @@
-
-# PLACEHOLDER
-TODO: About Me
